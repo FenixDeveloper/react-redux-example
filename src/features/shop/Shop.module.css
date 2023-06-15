@@ -1,0 +1,50 @@
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.item {
+    border: 1px solid gray;
+    padding: 1rem;
+}
+
+.item h2 {
+    margin: 0;
+}
+
+.sku {
+    font-size: 0.8rem;
+}
+
+.price::after {
+    content: "₽"
+}
+
+.amount {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.amount > * {
+    border: 1px solid gray;
+    border-radius: 0;
+}
+
+.amountValue {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.basketContainer {
+    position: relative;
+}
+
+.basketContent {
+    position: absolute;
+    background: white;
+    width: 50%;
+    border: 1px solid gray;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+}
